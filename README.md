@@ -1,1 +1,4 @@
 # angularDemoApp
+// ===========================
+1. BASIC NAVIGATION USING LAZY LOADING
+2. BINDINGING THE VALUES TS TO HTML PAGE
