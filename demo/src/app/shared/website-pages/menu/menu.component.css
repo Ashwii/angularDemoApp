@@ -1,0 +1,21 @@
+header ul{
+    margin: 0;
+    border: 0;
+    line-height: 1;
+    list-style-type: none;
+    text-align: center;
+}
+ul li a {
+    margin: 0;
+    border: 0;
+    line-height: 1;
+    text-decoration: none;
+    padding: 18px;
+    font-size: 16px;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    font-weight: 700;
+    letter-spacing: 0;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}

@@ -15,7 +15,7 @@ import { MenuComponent } from './menu/menu.component';
     CommonModule
   ],
   exports: [
-    DemoNavComponent, DemoHeaderComponent, DemoContentComponent, DemoServiceComponent, DemoFooterComponent
+    DemoNavComponent, DemoHeaderComponent, DemoContentComponent, DemoServiceComponent, DemoFooterComponent, MenuComponent
   ]
 })
 export class WebsitePagesModule { }
