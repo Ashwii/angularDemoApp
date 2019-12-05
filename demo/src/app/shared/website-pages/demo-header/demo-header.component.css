@@ -1,0 +1,35 @@
+.header{
+    position: relative;
+    top:0
+}
+.header_bg{
+    background-image: url('../../../../assets/img//slider.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100vh;
+
+}
+.head_content{
+    height: calc(100vh - 83px);
+    margin-top: 83px;
+
+}
+.head_head h1{
+    font-size: 40px;
+    color: #10266b;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 45px;
+}
+.head_head h1 span{
+    font-weight: 700;
+}
+.head_sub p{
+    color: #0f276b;
+    font-weight: 300;
+    font-size:17px;
+    line-height:2;
+    font-family: 'Poppins-Extralight'
+}

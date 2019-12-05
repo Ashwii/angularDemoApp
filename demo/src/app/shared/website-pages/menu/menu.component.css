@@ -1,3 +1,6 @@
+.navbar{
+    z-index:1;
+}
 header ul{
     margin: 0;
     border: 0;
@@ -18,4 +21,5 @@ ul li a {
     letter-spacing: 0;
     text-transform: capitalize;
     letter-spacing: 1px;
+    color: #fff;
 }

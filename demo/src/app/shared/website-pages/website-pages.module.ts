@@ -6,13 +6,13 @@ import { DemoContentComponent } from './demo-content/demo-content.component';
 import { DemoServiceComponent } from './demo-service/demo-service.component';
 import { DemoFooterComponent } from './demo-footer/demo-footer.component';
 import { MenuComponent } from './menu/menu.component';
-
+import { RouterModule, Route} from '@angular/router';
 
 
 @NgModule({
   declarations: [DemoNavComponent, DemoHeaderComponent, DemoContentComponent, DemoServiceComponent, DemoFooterComponent, MenuComponent],
   imports: [
-    CommonModule
+    CommonModule, RouterModule
   ],
   exports: [
     DemoNavComponent, DemoHeaderComponent, DemoContentComponent, DemoServiceComponent, DemoFooterComponent, MenuComponent
