@@ -13,7 +13,14 @@
 .head_content{
     height: calc(100vh - 83px);
     margin-top: 83px;
-
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    z-index: 2;
 }
 .head_head h1{
     font-size: 40px;
@@ -32,4 +39,17 @@
     font-size:17px;
     line-height:2;
     font-family: 'Poppins-Extralight'
+}
+.bttns{
+    margin-top:10px;
+}
+.head_img{
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    position: absolute;
+    right: 5px;
+}
+.head_img img{
+    width:440px;
 }

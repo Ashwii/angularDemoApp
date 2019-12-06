@@ -11,13 +11,20 @@
     font-family: 'Poppins-light';
 }
 .btn_custom{
-    background-image: linear-gradient(to right, #1F357D, #04185B, #04185B, #1F357D);
     border: transparent;
-    background-color: #04185B;
+    background-color: #04185B !important;
     border-radius:25px !important;
     color:#fff !important;
     text-transform: uppercase;
     font-size:16px !important;
     font-weight: 700 !important;
     padding: 10px 53px !important;
+}
+.btn_custom:hover{
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    color: #fff !important;
+    background-position: 100% 0;
+    background-image: linear-gradient(to right, #1F357D, #04185B, #04185B, #1F357D);
+
 }

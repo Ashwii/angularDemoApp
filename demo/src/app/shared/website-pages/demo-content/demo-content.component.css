@@ -1,0 +1,19 @@
+
+.head_content{
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.head_content h3{
+    color: #10266b;
+    text-transform: capitalize;
+    position: absolute;
+    font-size: 150px !important;
+    opacity: 0.03;
+    left: 250px;
+    line-height: 1 !important;
+    font-weight: 700 !important;
+    top: 0;
+    left:20%;
+}
