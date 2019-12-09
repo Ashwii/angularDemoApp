@@ -1,1 +1,29 @@
-<p>blog works!</p>
+<section class="head">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-12 col-sm-12">
+                <h3 class="text-center blog_head">Blog List</h3>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-12" *ngFor="let blog of blogList">
+            <div class="blog_contain">
+                <img src="../../../../assets/img/17.jpg" class="img-fluid">
+                <div class="blog_content">
+                    <p>{{blog.update_at | date: 'medium'}}</p>
+                    <h3>{{blog.title}}</h3>
+                    <p>{{blog.small_description}}</p>
+                    <a [routerLink]="['/blog-detail', blog.id]">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 col-sm-12 col-12" *ngIf="blogList.length == 0">
+                <div class="blog_contain">
+                    <div class="text-center no_record_found">No Records Found</div>
+                    </div>
+        </div>
+    </div>
+</div>

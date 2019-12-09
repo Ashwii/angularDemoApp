@@ -1,0 +1,46 @@
+.service{
+    background-image: url('../../../../assets/img/background.png');
+    background-repeat: none;
+    background-size: cover;
+}
+.service section{
+    padding: 70px 0;
+}
+ul {
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+ul li{
+    padding:50px 5px;
+    background:#fff;
+    border-radius: 5px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-filter: drop-shadow(0 0 10px #eee);
+    filter: drop-shadow(0 0 10px #eee);
+    margin-bottom:10px;
+}
+ul li:hover{
+    background:#10266b;
+    color:#fff;
+}
+ul li:hover img{
+    background:white;
+    border-radius: 3px;
+}
+.mt-per{
+    margin-top:80%;
+    margin-left:10%;
+}
+.mt-per h3{
+    margin-top: -3px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #10266b;
+}
+@media (max-width:1110px){
+    ul li{
+        padding: 15px 5px;
+    }
+}

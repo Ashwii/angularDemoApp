@@ -53,3 +53,12 @@
 .head_img img{
     width:440px;
 }
+.mr-10{
+    margin-right: 10px;
+}
+/* // ================================================================================= */
+@media (max-width: 1110px) {
+    .header_bg{
+        background-position: bottom;
+    }
+}

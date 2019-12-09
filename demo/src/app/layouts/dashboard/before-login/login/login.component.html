@@ -1,1 +1,32 @@
-<p>login works!</p>
+
+
+    <div class="container">
+        <form [formGroup]="loginForm">
+            <div class="row">
+                <div class="col-md-4 col-offset-8 form">
+                    <h3 class="text-center">Demo</h3>
+                    <div class="form-group">
+                        <label for="user_name">User Name</label>
+                        <input type="text" class="form-control" formControlName="user_name" id="user_name" placeholder="Enter User Name">
+                        <p *ngFor="let validation of validationMessage.user_name">
+                            <span class="error-message" *ngIf="loginForm.get('user_name').hasError(validation.type) && (loginForm.get('user_name').dirty || loginForm.get('user_name').touched)">
+                                {{ validation.message }}
+                            </span>
+                        </p>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" formControlName="password" id="password" placeholder="Enter Password">
+                        <p *ngFor="let validation of validationMessage.password">
+                            <span class="error-message" *ngIf="loginForm.get('password').hasError(validation.type) && (loginForm.get('password').dirty || loginForm.get('password').touched)">
+                                {{ validation.message }}
+                            </span>
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn_custom" [disabled]="!loginForm.valid" (click)="login()">Login</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+</div>

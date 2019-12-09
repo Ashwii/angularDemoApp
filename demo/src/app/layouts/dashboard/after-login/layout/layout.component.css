@@ -1,0 +1,56 @@
+.top_bar, .side_bar, .top_bar div{
+    background:#10266b;
+}
+.top_bar {
+    display: block;
+}
+.top_bar span{
+    padding: 20px 42px;
+    color:#10266b;
+}
+.side_bar{
+    width:250px;
+    max-width: 250px;
+    height: 100vh;
+    position: fixed;
+}
+.side_bar ul{
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+.side_bar ul li{
+    padding:8px 6px 8px 15px;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid transparent;
+
+}
+.side_bar ul li a, siebar li {
+    color: #fff;
+    font-size: 16px;
+    line-height:1.8;
+    
+}
+.admin{
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    color: #10266b;
+    padding-top:20px !important;
+    padding-bottom: 20px !important;
+    border-right: 1px solid #10266b !important;
+}
+.page_wrapper{
+    margin-left: 250px;
+   
+}
+.page_wrapper .content{
+    padding:2%;
+}
+.m-t-40{
+    margin-top:40px;
+}
+.active{
+    background:#fff;
+    color:#10266b;
+}

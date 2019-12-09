@@ -10,6 +10,8 @@
     color: #10266b;
     font-size: 16px;
     font-weight: bold;
+    position: relative;
+    z-index: 1;
 }
 .head nav{
     position: relative;

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ServiceService } from '../../../shared/service.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-blog-detail',
@@ -6,10 +8,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./blog-detail.component.css']
 })
 export class BlogDetailComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
+  blogId: number;
+  blogUrl = 'snacks';
+  blogDetail: object = {};
+  constructor(public service: ServiceService, public route: ActivatedRoute) {
+    this.route.paramMap.subscribe(param => {
+      this.blogId = +param.get('id');
+    });
   }
 
+  ngOnInit() {
+    this.getBlogDetail();
+  }
+  // ================================================================================
+  // GET BLOG DETAIL
+  // ===========================
+  getBlogDetail() {
+    this.service.getData(this.blogUrl, this.blogId).subscribe((result) => {
+      this.blogDetail = result;
+    }, error => console.log(error));
+  }
+  // =================================================================================
 }

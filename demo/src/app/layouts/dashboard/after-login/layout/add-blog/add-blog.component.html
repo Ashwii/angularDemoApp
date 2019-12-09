@@ -1,0 +1,66 @@
+<div class="container-fluid">
+<div class="row wid_100">
+    <div class="col-md-6 col-sm-12 col-12">
+        <div class="card">
+            <div class="card-title card-header">Add Blog</div>
+            <div class="card-body">
+            <form [formGroup]="blogForm">
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type ="text" class="form-control" placeholder="Enter Title" id="title" formControlName="title"/> 
+                </div>
+                <div class="form-group">
+                        <label for="short_note">Short Note</label>
+                        <input type="text" class="form-control" placeholder="Enter Short Note" id="short_note" formControlName="small_description"/> 
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea class="form-control" formControlName="description" placeholder="Enter Description"></textarea>
+                    </div>
+                    <div class="text-center">
+                    <div class=" btn-group">
+                        <button class="btn btn-add" title="Add" (click)="submit()" *ngIf="!updateForm">Add</button>
+                        <button class="btn btn-add" title="Update" (click)="update()" *ngIf="updateForm">Update</button>
+                        <button class="btn btn-danger" title="Clear" (click)="reset()">Reset</button>
+                    </div>
+                    </div>
+            </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-lg-6 col-sm-12 col-12">
+        <div class="card">
+            <div class="card-title card-header">Blog List</div>
+            <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>S. No</th>
+                        <th>Title</th>
+                        <th style="width: 250px;">Short Note</th>
+                        <!-- <th>description</th> -->
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let blog of blogList; let i=index">
+                        <td>{{i+1}}</td>
+                        <td>{{blog.title}}</td>
+                        <td>{{blog.small_description}}</td>
+                        <!-- <td>{{blog.description}}</td> -->
+                        <td>
+                            <div class="btn-group-vertical">
+                            <button class="btn btn-xs btn-add" (click)="edit(blog.id)">Edit</button>
+                            <button class="btn btn-xs btn-danger" (click)="delete(blog.id)">Delete</button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+        </div>
+    </div> 
+</div>
+</div>
