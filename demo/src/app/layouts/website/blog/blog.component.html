@@ -14,9 +14,9 @@
                 <img src="../../../../assets/img/17.jpg" class="img-fluid">
                 <div class="blog_content">
                     <p>{{blog.update_at | date: 'medium'}}</p>
-                    <h3>{{blog.title}}</h3>
-                    <p>{{blog.small_description}}</p>
-                    <a [routerLink]="['/blog-detail', blog.id]">Read More</a>
+                    <h3><a [routerLink]="['/blog-detail', blog.id]">{{blog.title}}</a></h3>
+                    <p>  {{ (blog.description.length>60 && more) ? (blog.description | slice:0:60)+'..': blog.description }}</p>
+                    <a class="read" (click)="more = !more" *ngIf="blog.description.length>60">{{more ? 'Read More': 'Read Less'}}</a>
                 </div>
             </div>
         </div>

@@ -10,10 +10,10 @@ header ul{
 }
 ul li a {
     margin: 0;
-    border: 0;
+    border: 2px solid transparent;
     line-height: 1;
     text-decoration: none;
-    padding: 18px;
+    padding: 8px 12px;
     font-size: 16px;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
@@ -22,4 +22,9 @@ ul li a {
     text-transform: capitalize;
     letter-spacing: 1px;
     color: #fff;
+}
+.active{
+border-top: 2px solid #fff !important;
+background: #ffffff;
+color: #0f276b !important;
 }

@@ -11,6 +11,7 @@ import { ServiceService } from '../../../../shared/service.service';
 export class LoginComponent implements OnInit {
   loginForm: FormGroup;
   // Validation Messages
+  // ==================================
   validationMessage = {
     user_name: [
       { type: 'required', message: 'User Name is required.' }
@@ -48,5 +49,9 @@ login = () => {
   } else {
     this.toastr.error('Validation Failed');
   }
+}
+// ==================================================================
+userPage = () => {
+  this.route.navigate(['/home']);
 }
 }

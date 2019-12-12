@@ -3,9 +3,25 @@
     margin: 0 auto;
     padding: 3%;
     vertical-align: center;
-    margin-top:20%;
+    margin-top:9%;
 }
 .form h3{
     padding:5px 0;
     color:#10266b;
+}
+button{
+    font-size: 14px !important;
+    width: 100%;  
+}
+button.login{
+    margin-top:10px;
+}
+.or{
+    color:#fff; 
+    font-weight: 700;
+    padding:8px 0;
+}
+label{
+    color: #10266b; 
+    font-weight: 700;
 }

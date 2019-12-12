@@ -9,7 +9,7 @@
                         <label for="user_name">User Name</label>
                         <input type="text" class="form-control" formControlName="user_name" id="user_name" placeholder="Enter User Name">
                         <p *ngFor="let validation of validationMessage.user_name">
-                            <span class="error-message" *ngIf="loginForm.get('user_name').hasError(validation.type) && (loginForm.get('user_name').dirty || loginForm.get('user_name').touched)">
+                            <span class="text-danger" *ngIf="loginForm.get('user_name').hasError(validation.type) && (loginForm.get('user_name').dirty || loginForm.get('user_name').touched)">
                                 {{ validation.message }}
                             </span>
                         </p>
@@ -18,13 +18,16 @@
                         <label for="password">Password</label>
                         <input type="password" class="form-control" formControlName="password" id="password" placeholder="Enter Password">
                         <p *ngFor="let validation of validationMessage.password">
-                            <span class="error-message" *ngIf="loginForm.get('password').hasError(validation.type) && (loginForm.get('password').dirty || loginForm.get('password').touched)">
+                            <span class="text-danger" *ngIf="loginForm.get('password').hasError(validation.type) && (loginForm.get('password').dirty || loginForm.get('password').touched)">
                                 {{ validation.message }}
                             </span>
                         </p>
                     </div>
                     <div class="text-center">
-                        <button class="btn btn_custom" [disabled]="!loginForm.valid" (click)="login()">Login</button>
+                        <button class="btn btn_custom login" [disabled]="!loginForm.valid" (click)="login()">Login As Admin</button>
+                        <div class="text-center or">---------------- (OR) ----------------</div>
+                        <button class="btn btn_custom d-block"  (click)="userPage()">Continue As User </button>
+
                     </div>
                 </div>
             </div>

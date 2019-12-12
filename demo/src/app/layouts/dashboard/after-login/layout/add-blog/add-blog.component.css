@@ -13,3 +13,13 @@
     background:#10266b;;
     color:#fff;
 }
+.btn-delete{
+    background: #fff;
+    border-color:#10266b;
+}
+.mr-10{
+    margin-right:10px;
+}
+.margin5{
+    margin-bottom: 10px;
+}

@@ -10,6 +10,9 @@
 *{
     font-family: 'Poppins-light';
 }
+button, button:focus , button:active{
+    outline: 0 !important;
+}
 .btn_custom{
     border: transparent;
     background-color: #04185B !important;
@@ -26,6 +29,20 @@
     color: #fff !important;
     background-position: 100% 0;
     background-image: linear-gradient(to right, #1F357D, #04185B, #04185B, #1F357D);
+
+}
+.ngx-pagination {
+    background: #0f276b ;
+    padding: 4px ;
+}
+.ngx-pagination li span, .ngx-pagination li a{
+    color: #fff !important;
+
+}
+.ngx-pagination li:hover span, .ngx-pagination li:hover a, .ngx-pagination .disabled:hover{
+    color: #0f276b !important;
+    background-color: #fff !important;
+
 
 }
 @media (max-width:1110px) {

@@ -8,6 +8,7 @@ import { ServiceService } from '../../../shared/service.service';
 export class BlogComponent implements OnInit {
   blogUrl = 'snacks';
   blogList: any = [];
+  more = true;
   constructor(public service: ServiceService) { }
 
   ngOnInit() {

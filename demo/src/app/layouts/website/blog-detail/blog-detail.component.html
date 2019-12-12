@@ -1,24 +1,24 @@
 <section class="head">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-12 col-sm-12">
-                    <h3 class="text-center blog_head">Blog Detail</h3>
-                </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-12 col-sm-12">
+                <h3 class="text-center blog_head">Blog Detail</h3>
             </div>
         </div>
-    </section>
-    <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-sm-12 col-12" >
-                    <div class="blog_contain">
-                        <img src="../../../../assets/img/17.jpg" class="img-fluid">
-                        <div class="blog_content">
-                            <p>{{blogDetail.update_at | date: 'medium'}}</p>
-                            <h3>{{blogDetail.title}}</h3>
-                            <p>{{blogDetail.description}}</p>
-                            <a [routerLink]="['/blog']">Back</a>
-                        </div>
+    </div>
+</section>
+<div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-12" >
+                <div class="blog_contain">
+                    <img src="../../../../assets/img/17.jpg" class="img-fluid">
+                    <div class="blog_content">
+                        <p>{{blogDetail.update_at | date: 'medium'}}</p>
+                        <h3>{{blogDetail.title}}</h3>
+                        <p>{{blogDetail.description}}</p>
+                        <a [routerLink]="['/blog']">Back</a>
                     </div>
                 </div>
             </div>
         </div>
+    </div>

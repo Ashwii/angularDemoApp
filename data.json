@@ -1,0 +1,49 @@
+{
+  "snacks": [
+    {
+      "id": 8,
+      "title": "Title",
+      "description": "Description1",
+      "updated_at": "2019-12-12T18:09:49.598Z"
+    },
+    {
+      "id": 9,
+      "title": "Test1",
+      "description": "Desc1",
+      "updated_at": "2019-12-12T19:12:54.719Z"
+    },
+    {
+      "id": 10,
+      "title": "Test2",
+      "description": "Description2",
+      "updated_at": "2019-12-12T19:13:10.516Z"
+    },
+    {
+      "id": 11,
+      "title": "Test4",
+      "description": "Test 4",
+      "updated_at": "2019-12-12T19:13:25.818Z"
+    },
+    {
+      "id": 12,
+      "title": "Title Sample",
+      "description": "Description 4",
+      "updated_at": "2019-12-12T20:16:30.809Z"
+    },
+    {
+      "id": 13,
+      "title": "dfdsfsd",
+      "description": "dzfdsgfd",
+      "updated_at": "2019-12-12T20:16:46.033Z"
+    }
+  ],
+  "login": {
+    "token": 123456,
+    "status": "success",
+    "message": "Login Successfully"
+  },
+  "logout": {
+    "status": "success",
+    "message": "LogOut Successfully"
+  }
+}
