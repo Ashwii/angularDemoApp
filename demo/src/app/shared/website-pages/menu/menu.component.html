@@ -2,5 +2,7 @@
     <ul >
         <li class="d-inline-block"><a [routerLink]="['/home']" routerLinkActive="active">Home</a></li>
         <li class="d-inline-block"><a [routerLink]="['/blog']" routerLinkActive="active">Blog</a></li>
+        <li class="d-inline-block" *ngIf="show "><a [routerLink]="['/layout/blogs']" routerLinkActive="active">Back To Dashboard</a></li>
+
     </ul>
 </div>

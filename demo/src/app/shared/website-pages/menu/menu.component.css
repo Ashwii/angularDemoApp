@@ -23,8 +23,3 @@ ul li a {
     letter-spacing: 1px;
     color: #fff;
 }
-.active{
-border-top: 2px solid #fff !important;
-background: #ffffff;
-color: #0f276b !important;
-}

@@ -46,6 +46,14 @@ button, button:focus , button:active{
 
 
 }
+.active{
+    color: #fff !important;
+    background: #10266b !important;
+    display: block;
+    /* padding: 3px 21px; */
+    border: 2px solid #fff !important;
+    
+}
 @media (max-width:1110px) {
     .btn_custom{
         padding: 10px 28px !important;

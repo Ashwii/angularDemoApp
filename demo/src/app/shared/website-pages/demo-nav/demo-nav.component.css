@@ -3,8 +3,11 @@
   
     width: 100%;
 }
-.title{
+.title, .title:focus{
     text-decoration: none;
+    outline:0 !important;
+    box-shadow: 0 !important;
+    cursor: pointer;
 }
 .title h1{
     color: #10266b;

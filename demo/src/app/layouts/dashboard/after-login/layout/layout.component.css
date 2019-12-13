@@ -23,9 +23,13 @@
 }
 
 .side_bar ul li a, siebar li {
-    color: #fff;
+    color: #10266b;
     font-size: 16px;
     line-height:1.8;
+    background: #fff ;
+    display: block;
+    padding: 3px 21px;
+    border: 2px solid #fff;
     
 }
 .admin{
@@ -46,14 +50,7 @@
 .m-t-40{
     margin-top:40px;
 }
-.active{
-    color: #fff;
-    background-color: #10266b !important;
-    display: block;
-    padding: 3px 21px;
-    border: 2px solid #10266b;
-    
-}
+
 .logout{
     cursor:pointer;
 }

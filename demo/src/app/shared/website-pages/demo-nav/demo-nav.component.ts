@@ -7,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DemoNavComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  this.user = localStorage.getItem('token');
+  }
+  user: any;
 
   ngOnInit() {
   }
