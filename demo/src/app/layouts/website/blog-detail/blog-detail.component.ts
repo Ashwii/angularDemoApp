@@ -16,6 +16,7 @@ export class BlogDetailComponent implements OnInit {
     this.route.paramMap.subscribe(param => {
       this.blogId = +param.get('id');
     });
+    window.scrollTo(0, 0);
   }
 
   ngOnInit() {

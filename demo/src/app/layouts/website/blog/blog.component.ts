@@ -10,7 +10,9 @@ export class BlogComponent implements OnInit {
   blogUrl = 'snacks';
   blogList: any = [];
   more = true;
-  constructor(public service: ServiceService) { }
+  constructor(public service: ServiceService) {
+    window.scrollTo(0, 0);
+   }
 
   ngOnInit() {
     new WOW().init();
