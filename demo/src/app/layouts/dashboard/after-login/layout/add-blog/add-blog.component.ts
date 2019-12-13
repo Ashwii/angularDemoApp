@@ -18,7 +18,7 @@ export class AddBlogComponent implements OnInit {
   updateForm = false;
   blog = new Blog();
   list = 5;
-  options = [ 5, 10, 25, 50 ];
+  options = [5, 10, 25, 50];
   page = 1;
   // Validation Messages
   // ==================================

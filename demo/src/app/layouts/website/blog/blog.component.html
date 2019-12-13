@@ -9,11 +9,11 @@
 </section>
 <div class="container">
     <div class="row">
-        <div class="col-md-12 col-sm-12 col-12" *ngFor="let blog of blogList">
-            <div class="blog_contain">
+        <div class="col-md-12 col-sm-12 col-12 " *ngFor="let blog of blogList">
+            <div class="blog_contain  wow animated fadeInUp">
                 <img src="../../../../assets/img/17.jpg" class="img-fluid">
                 <div class="blog_content">
-                    <p>{{blog.update_at | date: 'medium'}}</p>
+                    <p>{{blog.updated_at | date: 'medium'}}</p>
                     <h3><a [routerLink]="['/blog-detail', blog.id]">{{blog.title}}</a></h3>
                     <p>  {{ (blog.description.length>60 && more) ? (blog.description | slice:0:60)+'..': blog.description }}</p>
                     <a class="read" (click)="more = !more" *ngIf="blog.description.length>60">{{more ? 'Read More': 'Read Less'}}</a>
@@ -23,7 +23,7 @@
         <div class="col-md-12 col-sm-12 col-12" *ngIf="blogList.length == 0">
                 <div class="blog_contain">
                     <div class="text-center no_record_found">No Records Found</div>
-                    </div>
+                </div>
         </div>
     </div>
 </div>

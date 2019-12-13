@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ServiceService } from '../../../shared/service.service';
+import { WOW } from '../../../../../node_modules/wowjs/dist/wow.min.js';
 @Component({
   selector: 'app-blog',
   templateUrl: './blog.component.html',
@@ -12,6 +13,7 @@ export class BlogComponent implements OnInit {
   constructor(public service: ServiceService) { }
 
   ngOnInit() {
+    new WOW().init();
     this.getList();
   }
   // =========================================================================

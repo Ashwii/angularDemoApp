@@ -6,4 +6,4 @@
 5. If we use the .json file inside the project while adding, updating and delete functions are changing the .json file  so the project is reloaded .so,  the json is use outside of the project.
 6. Normal Bootstrap Modal is used for ADDING BLOG
 7. LOGIN PAGE is changed
- 
+8. Front End Pagination is Used

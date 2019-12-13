@@ -67,7 +67,7 @@
 
             <!-- Modal Header -->
             <div class="modal-header btn-add text-center">
-                <h4 class="modal-title ">Add Blog</h4>
+                <h4 class="modal-title ">{{updateForm ? 'Update Blog' : 'Add Blog'}}</h4>
                 <button type="button" class="close btn-add" (click)="close()">&times;</button>
             </div>
 
@@ -100,7 +100,7 @@
                         <div class=" ">
                             <button class="btn btn-add mr-10" title="Add" (click)="submit()" *ngIf="!updateForm">Add</button>
                             <button class="btn btn-add mr-10" title="Update" (click)="update()" *ngIf="updateForm">Update</button>
-                            <button class="btn btn-delete" title="Clear" (click)="reset()">Reset</button>
+                            <button class="btn btn-delete" title="Reset" (click)="reset()">Reset</button>
                         </div>
                     </div>
                 </form>
