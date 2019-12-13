@@ -4,7 +4,7 @@
                 <div class=""><span class="float-left">
                         <button class="btn btn-delete" data-toggle="modal" title="Add Blog" data-target="#myModal" (click)="reset()">Add Blog</button>
                 </span>
-                <span class="float-right">
+                <span class="float-right" *ngIf="page == 1">
                   <div><select class="form-control" [(ngModel)]="list" >
                         <option *ngFor="let option of options" [value]="option">{{option}}</option>
                     </select></div>
@@ -29,7 +29,7 @@
                             </thead>
                             <tbody>
                                 <tr *ngFor="let blog of blogList  | paginate: { itemsPerPage: list, currentPage: page}; let i=index">
-                                    <td>{{i+1}}</td>
+                                    <td>{{((list*page) - list ) +(i+1)}}</td>
                                     <td>{{blog.title}}</td>
                                     <td>{{blog.description}}</td>
                                     <td class="text-center">
